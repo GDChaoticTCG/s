@@ -221,6 +221,11 @@
 			if (!Engine.isWebGLAvailable()) {
 				displayFailureNotice('WebGL not available');
 			} else {
+                engine.preloadFile('webp_attack.pck')
+                engine.preloadFile('webp_battlegear.pck')
+                engine.preloadFile('webp_creature.pck')
+                engine.preloadFile('webp_location.pck')
+                engine.preloadFile('webp_mugic.pck')
 				setStatusMode('indeterminate');
 				engine.startGame({
 					'onProgress': function (current, total) {
