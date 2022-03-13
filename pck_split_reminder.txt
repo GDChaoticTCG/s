@@ -1,0 +1,11 @@
+Steps to create split PCKs so GitHub doesn't yell at you for >100MiB check-ins
+
+1. Project > Export > HTML5 > Resources
+2. Export Mode: "Export selected resources (and dependencies)"
+3. Filters to exclude files/folders from project: blank
+4. Select items you want to export (I did this step for img/Attack, img/Battlegear, img/Creature, img/Location, and img/Mugic each on their own)
+5. Export PCK/Zip
+6. Add the file to the autoloads
+7. Export Mode: "Export all resources in the project"
+8. Filters to exclude files/folders from project: The filetypes you exported for step 4
+9. Export Project
